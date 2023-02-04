@@ -26,10 +26,13 @@ public class SeasonManager : MonoBehaviour
     public static SeasonManager seasonManager { get => instance; }
     [SerializeField] BackgroundManager backgroundManager;
 
+    [Category("Particles")]
     /// <summary>
     /// List of particles depending on season (use the enum)
     /// </summary>
-    [SerializeField] List<ParticleSystem> particles;
+    [SerializeField] List<GameObject> particles;
+    public GameObject actualParticle;
+
     /// <summary>
     /// Where the elementspawners will spawn
     /// </summary>
@@ -51,7 +54,6 @@ public class SeasonManager : MonoBehaviour
     [SerializeField] bool isRaining;
     bool isRainingLAST;
     public Action<bool> OnRainChange;
-
     /// <summary>
     /// the elementspawners already spawned
     /// </summary>
@@ -78,6 +80,10 @@ public class SeasonManager : MonoBehaviour
     {
         spawnPoints = new List<Transform>();
         actualSeason = eSeason.SPRING;
+
+        // Particles
+        actualParticle = Instantiate(particles[(int)actualSeason], transform);
+
         timerSeason = 0f;
 
         OnRainChange += SpawnsRainSpawners;
@@ -109,6 +115,8 @@ public class SeasonManager : MonoBehaviour
         }
         Debug.Log(actualSeason.ToString());
         backgroundManager.ProcFade();
+        Destroy(actualParticle.gameObject);
+        actualParticle = Instantiate(particles[(int)actualSeason], transform);
 
         // TODO :
         // clear les gameobjects déjà spawned si besoin
