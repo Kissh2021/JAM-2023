@@ -24,17 +24,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireElement Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4383023604814089287, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
+      propertyPath: m_Radius
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803524265483840999, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f831ed6fe28c24a888f8a1880c4deaa4, type: 3}
     - target: {fileID: 4803524265483840999, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
       propertyPath: m_Color.b
-      value: 0.15966538
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4803524265483840999, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
       propertyPath: m_Color.g
-      value: 0.38545376
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4803524265483840999, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
       propertyPath: m_Color.r
-      value: 0.8679245
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7060554593583624538, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
       propertyPath: m_RootOrder
