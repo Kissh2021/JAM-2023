@@ -131,15 +131,15 @@ MonoBehaviour:
     HasValue: 0
   displaySortOrder: 0
   childIdentifiers:
-  - e7a046c753c3c3d4aacc91f6597f310d
-  - fd7c55dab0fce234b8c25f6ffca523c1
   - 52eb9df5db46521439908db3a29a1bbb
-  - 2fea114e74ecf3c4f920e1d5cc1c4c40
   - b7716510a1f36934c87976f3a81dbf3d
+  - 0f8eb3f400726694eb47beb1a9f94ce8
   - c88d16e5272a4e241b0ef0ac2e53b73d
   - 46fbfdf3fc43db0458918377fd40293e
+  - 2fea114e74ecf3c4f920e1d5cc1c4c40
+  - fd7c55dab0fce234b8c25f6ffca523c1
+  - e7a046c753c3c3d4aacc91f6597f310d
   - 2c5177b11d81d824dbb064f9ac8527da
-  - 0f8eb3f400726694eb47beb1a9f94ce8
   codecChannels:
     Value: []
     HasValue: 0
@@ -292,8 +292,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: 
-  sourceBankPath: 
+  sourceProjectPath: FMOD/FMOD.fspro
+  sourceBankPath: FMOD/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -301,7 +301,7 @@ MonoBehaviour:
   BankLoadType: 0
   AutomaticSampleLoading: 0
   EncryptionKey: 
-  ImportType: 0
+  ImportType: 1
   TargetAssetPath: FMODBanks
   TargetBankFolder: 
   EventLinkage: 0
@@ -314,7 +314,8 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
+  MasterBanks:
+  - Master
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
@@ -330,17 +331,17 @@ MonoBehaviour:
   HideSetupWizard: 1
   LastEventReferenceScanVersion: 131601
   Platforms:
-  - {fileID: 1616868798471175704}
-  - {fileID: -5497649834860749235}
-  - {fileID: 7396712989554662875}
-  - {fileID: 6469465376833924000}
   - {fileID: -6973536292770075514}
-  - {fileID: 4541613747916912498}
+  - {fileID: -5497649834860749235}
   - {fileID: -2314704935501897957}
+  - {fileID: -1264180691099114897}
+  - {fileID: 1616868798471175704}
   - {fileID: 2090526314031047416}
   - {fileID: 3307550468205531661}
+  - {fileID: 4541613747916912498}
+  - {fileID: 6469465376833924000}
+  - {fileID: 7396712989554662875}
   - {fileID: 8809527878241583125}
-  - {fileID: -1264180691099114897}
   MigratedPlatforms: 0b0000000800000015000000060000000a0000000c0000000900000005000000120000000200000001000000
 --- !u!114 &1616868798471175704
 MonoBehaviour:
