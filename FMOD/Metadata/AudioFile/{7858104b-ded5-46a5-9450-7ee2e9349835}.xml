@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7858104b-ded5-46a5-9450-7ee2e9349835}">
+		<property name="assetPath">
+			<value>Music/Game/Electronic Anthem_only chill guitare without stutter.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>186.19564625850339</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b1f7032d-56ed-46e7-974b-2504757bd0dc}</destination>
+		</relationship>
+	</object>
+</objects>
