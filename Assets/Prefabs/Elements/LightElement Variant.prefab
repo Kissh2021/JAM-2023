@@ -9,6 +9,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 470465780237244108, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
+      propertyPath: SpeedY
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 470465780237244108, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
       propertyPath: DirectionY
       value: 5
       objectReference: {fileID: 0}
@@ -22,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3989306502529672577, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
       propertyPath: m_Name
-      value: FireElement Variant
+      value: LightElement Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4383023604814089287, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
       propertyPath: m_Radius
