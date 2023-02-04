@@ -3,7 +3,7 @@ using UnityEngine;
 public class ParticleWind : MonoBehaviour
 {
 	[SerializeField] private float windDirection;
-	[SerializeField] private Vector2 windForceChangeScale = new(2f, 2f);
+	[SerializeField] private float windForceChangeScale = 2f;
 
 	public float WindDirection
 	{
@@ -32,12 +32,12 @@ public class ParticleWind : MonoBehaviour
 	{
 		var vol = GetComponent<ParticleSystem>().velocityOverLifetime;
 		var x = vol.x;
-		x.constantMin = windDirection - windForceChangeScale.x;
-		x.constantMax = windDirection + windForceChangeScale.x;
+		x.constantMin = windDirection - windForceChangeScale;
+		x.constantMax = windDirection + windForceChangeScale;
 		vol.x = x;
 		var z = vol.z;
-		z.constantMin = Mathf.Abs(windDirection) - windForceChangeScale.y;
-		z.constantMax = Mathf.Abs(windDirection) + windForceChangeScale.y;
+		z.constantMin = Mathf.Abs(windDirection) - windForceChangeScale;
+		z.constantMax = Mathf.Abs(windDirection) + windForceChangeScale;
 		vol.z = z;
 
 		var pos = transform.position;
