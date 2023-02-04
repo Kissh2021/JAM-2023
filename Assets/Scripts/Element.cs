@@ -57,19 +57,4 @@ public class Element : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(transform.position, transform.position + desiredDirection);
     }
-
-    public void Drag(Vector2 pos)
-    {
-        transform.position = pos;
-    }
-
-    public void Drop()
-    {
-        
-    }
-
-    public void BeginDrag()
-    {
-        throw new System.NotImplementedException();
-    }
 }

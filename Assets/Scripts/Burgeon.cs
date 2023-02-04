@@ -17,28 +17,4 @@ public class Burgeon : MonoBehaviour
     {
         
     }
-    public void DragReceive()
-    {
-        
-    }
-
-    public void DragReceive(Dragable dragObj)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void EventRegister()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void OutLine(Dragable dragObj)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void StopOutline()
-    {
-        throw new System.NotImplementedException();
-    }
 }
