@@ -131,7 +131,7 @@ public class SeasonManager : MonoBehaviour
         actualNutrientSpawner = Instantiate(NutrientsSpawners[(int)actualSeason], nutrientTransform);
 
         // TODO :
-        // clear les gameobjects dÈj‡ spawned si besoin
+        // clear les gameobjects d√©j√† spawned si besoin
         // re spawn de nouvelles plantes si le spawner est vide
         // changer les particules (+1 sur la list)
     }
