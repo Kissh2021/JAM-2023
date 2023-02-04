@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Burgeon : MonoBehaviour , IDragTarget
+public class Burgeon : MonoBehaviour
 {
 
 
@@ -20,5 +20,25 @@ public class Burgeon : MonoBehaviour , IDragTarget
     public void DragReceive()
     {
         
+    }
+
+    public void DragReceive(Dragable dragObj)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void EventRegister()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void OutLine(Dragable dragObj)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void StopOutline()
+    {
+        throw new System.NotImplementedException();
     }
 }

@@ -12,7 +12,7 @@ public enum eElements
     ARMOR,
     COUNT
 }
-public class Element : MonoBehaviour , IDragable
+public class Element : MonoBehaviour
 {
     [SerializeField] eElements element;
     [SerializeField] float Movementspeed;
@@ -56,5 +56,20 @@ public class Element : MonoBehaviour , IDragable
         //desired direction vector
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(transform.position, transform.position + desiredDirection);
+    }
+
+    public void Drag(Vector2 pos)
+    {
+        transform.position = pos;
+    }
+
+    public void Drop()
+    {
+        
+    }
+
+    public void BeginDrag()
+    {
+        throw new System.NotImplementedException();
     }
 }
