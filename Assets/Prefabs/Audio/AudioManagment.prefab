@@ -66,8 +66,8 @@ MonoBehaviour:
       Data4: -768293938
     Path: event:/Music/Game
   Event: 
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 1
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
