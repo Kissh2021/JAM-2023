@@ -24,6 +24,7 @@ public class SeasonManager : MonoBehaviour
 {
     private static SeasonManager instance;
     public static SeasonManager seasonManager { get => instance; }
+    [SerializeField] BackgroundManager backgroundManager;
 
     /// <summary>
     /// List of particles depending on season (use the enum)
@@ -107,8 +108,7 @@ public class SeasonManager : MonoBehaviour
             actualSeason = eSeason.SPRING;
         }
         Debug.Log(actualSeason.ToString());
-
-
+        backgroundManager.ProcFade();
 
         // TODO :
         // clear les gameobjects déjà spawned si besoin
