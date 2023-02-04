@@ -33,16 +33,28 @@ public class SeasonManager : MonoBehaviour
     /// </summary>
     [SerializeField] List<GameObject> prefabs;
 
+    [SerializeField] float seasonDuration;
+
     /// <summary>
     /// the elementspawners already spawned
     /// </summary>
-    public List<GameObject> gameObjects;
+    public List<GameObject> ActualSpawners;
     static public eSeason actualSeason { get; set; }
-
+    float timerSeason;
     private void Start()
     {
         spawnPoints = new List<Transform>();
         actualSeason = eSeason.SPRING;
+        timerSeason = 0f;
+    }
+    private void Update()
+    {
+        timerSeason += Time.deltaTime;
+        if (timerSeason >= seasonDuration)
+        {
+            SeasonChange();
+            timerSeason = 0f;
+        }
     }
 
     /// <summary>
@@ -50,6 +62,7 @@ public class SeasonManager : MonoBehaviour
     /// </summary>
     private void SeasonChange()
     {
+        Debug.Log(actualSeason.ToString());
         // TODO :
         // clear les gameobjects déjà spawned si besoin
         // re spawn de nouvelles plantes si le spawner est vide
