@@ -1,15 +1,14 @@
+using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ElementSpawner : MonoBehaviour
 {
+    [SerializeField] float SpawnRate;
     public List<Element> elements;
+    float timer = 0;
 
-    private void Start()
-    {
-        elements = new List<Element>();
-    }
 
     /// <summary>
     /// Add an element to the list so it can spawns
@@ -25,11 +24,21 @@ public class ElementSpawner : MonoBehaviour
     /// </summary>
     public void Spawn()
     {
-        int elemToSpawn = Random.Range(0, elements.Count + 1);
+        int elemToSpawn = Random.Range(0, elements.Count);
 
         if (elements[elemToSpawn] != null)
         {
             Element newElem = Instantiate<Element>(elements[elemToSpawn], transform);
+            newElem.transform.parent = transform;
+        }
+    }
+    private void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer >= SpawnRate)
+        {
+            Spawn();
+            timer = 0;
         }
     }
 }
