@@ -27,19 +27,18 @@ public class PlayerController : MonoBehaviour
             {
                 if (currentlyDraggedObject == null)
                 {
-                    if (hit.collider.gameObject.TryGetComponent<Dragable>(out currentlyDraggedObject))
-                    {
-                        currentlyDraggedObject.BeginDrag();
-                    }
                     if (hit.collider.gameObject.TryGetComponent<Clickable>(out clickable))
                     {
                         clickable.Click();
                     }
-
-                    
+                    if (hit.collider.gameObject.TryGetComponent<Dragable>(out currentlyDraggedObject))
+                    {
+                        currentlyDraggedObject.BeginDrag();
+                    }
                 }
             }
         }
+
         if (Input.GetMouseButtonUp(0))
         {
             

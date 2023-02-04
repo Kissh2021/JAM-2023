@@ -21,5 +21,6 @@ public class DragTarget : MonoBehaviour
     {
         Debug.Log("DragReceive" +  dragObj.name);
         dragObj.IsDrag = false;
+        DragAndDropEvents.OnEndDrag?.Invoke();
     }
 }

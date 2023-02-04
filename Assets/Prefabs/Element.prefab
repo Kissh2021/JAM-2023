@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7060554593583624538}
   - component: {fileID: 4803524265483840999}
   - component: {fileID: 470465780237244108}
+  - component: {fileID: 4596981970955700665}
+  - component: {fileID: 452732681829446418}
   - component: {fileID: 4383023604814089287}
   m_Layer: 0
   m_Name: Element
@@ -100,8 +102,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   element: 0
   Movementspeed: 0
-  DirectionY: 0
   timeToMove: 0
+--- !u!114 &4596981970955700665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3989306502529672577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7b12bcf03f3424d92550ffbce3feba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &452732681829446418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3989306502529672577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a329fd4c9f583409cce88c3b9a46cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsDrag: 0
 --- !u!58 &4383023604814089287
 CircleCollider2D:
   m_ObjectHideFlags: 0
