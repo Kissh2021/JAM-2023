@@ -69,6 +69,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5310935007704793936, guid: 05c96f947993e0a40801d86cf41eae0d, type: 3}
+      propertyPath: SpeedY
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5310935007704793936, guid: 05c96f947993e0a40801d86cf41eae0d, type: 3}
       propertyPath: element
       value: 1
       objectReference: {fileID: 0}

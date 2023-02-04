@@ -16,6 +16,7 @@ public class Element : MonoBehaviour
 {
     [SerializeField] eElements element;
     [SerializeField] float Movementspeed;
+    [SerializeField] float SpeedY;
     [SerializeField] float timeToMove;
 
     float timer;
@@ -26,7 +27,7 @@ public class Element : MonoBehaviour
     void Start()
     {
         timer = 0f;
-        direction = new Vector3(0, Movementspeed, 0);
+        direction = new Vector3(0, SpeedY, 0);
     }
 
     void Update()
@@ -37,7 +38,7 @@ public class Element : MonoBehaviour
         {
             var xPos = Random.Range(-20.5f, 20.5f);
             desiredDirection = new Vector3(xPos,
-                Movementspeed, 
+                SpeedY, 
                 0);
             desiredDirection = desiredDirection.normalized * Movementspeed;
             timer = 0; 
@@ -56,5 +57,13 @@ public class Element : MonoBehaviour
         //desired direction vector
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(transform.position, transform.position + desiredDirection);
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("ParticleAllowed"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
