@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ParticuleSnow
+  m_Name: ParticuleLeaf
   m_Shader: {fileID: 211, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 2100000, guid: 8434b04a99652c942a90fa38523f705e, type: 2}
   m_ModifiedSerializedProperties: 16
@@ -27,7 +27,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 7710bbca411d23447a5701fd4447d8c9, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4f064c6921e9bc844b07577d5130cc9a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
