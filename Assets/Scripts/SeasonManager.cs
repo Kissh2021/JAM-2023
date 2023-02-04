@@ -1,5 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 public enum eSeason
@@ -19,10 +22,17 @@ public enum eSpawnerPrefabs
 
 public class SeasonManager : MonoBehaviour
 {
+    private static SeasonManager instance;
+    public static SeasonManager seasonManager { get => instance; }
+    [SerializeField] BackgroundManager backgroundManager;
+
+    [Category("Particles")]
     /// <summary>
     /// List of particles depending on season (use the enum)
     /// </summary>
-    [SerializeField] List<ParticleSystem> particles;
+    [SerializeField] List<GameObject> particles;
+    public GameObject actualParticle;
+
     /// <summary>
     /// Where the elementspawners will spawn
     /// </summary>
@@ -31,28 +41,98 @@ public class SeasonManager : MonoBehaviour
     /// <summary>
     /// the elementspawners prefabs
     /// </summary>
-    [SerializeField] List<GameObject> prefabs;
+    [SerializeField] List<GameObject> springSpawners;
+    [SerializeField] List<GameObject> summerSpawners;
+    [SerializeField] List<GameObject> autumnSpawners;
+    [SerializeField] List<GameObject> winterSpawners;
 
+    [SerializeField] float seasonDuration;
+
+    [Category("Rain")]
+    [SerializeField] GameObject rainSpawnerPrefab;
+    [SerializeField] List<Transform> rainSpawnPoints;
+    [SerializeField] bool isRaining;
+    bool isRainingLAST;
+    public Action<bool> OnRainChange;
     /// <summary>
     /// the elementspawners already spawned
     /// </summary>
-    public List<GameObject> gameObjects;
+    public List<GameObject> ActualSpawners;
     static public eSeason actualSeason { get; set; }
+    private bool IsRaining { get => isRaining; 
+        set {
+            if (isRaining != isRainingLAST)
+            {
+                Debug.Log(value);
+                isRaining = value;
+                OnRainChange.Invoke(IsRaining);
+            }
+            isRainingLAST = isRaining;
+        } }
 
+    float timerSeason;
+
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Start()
     {
         spawnPoints = new List<Transform>();
         actualSeason = eSeason.SPRING;
-    }
 
+        // Particles
+        actualParticle = Instantiate(particles[(int)actualSeason], transform);
+
+        timerSeason = 0f;
+
+        OnRainChange += SpawnsRainSpawners;
+    }
+    private void Update()
+    {
+        timerSeason += Time.deltaTime;
+        if (timerSeason >= seasonDuration)
+        {
+            SeasonChange();
+            timerSeason = 0f;
+        }
+        IsRaining = isRaining;
+    }
+    private void AddSpawnerToList(GameObject _spawner)
+    {
+        ActualSpawners.Add(_spawner);
+    }
     /// <summary>
     /// Do things when season change
     /// </summary>
     private void SeasonChange()
     {
+        // Update actualSeason
+        actualSeason = actualSeason + 1;
+        if (actualSeason == eSeason.COUNT)
+        {
+            actualSeason = eSeason.SPRING;
+        }
+        Debug.Log(actualSeason.ToString());
+        backgroundManager.ProcFade();
+        Destroy(actualParticle.gameObject);
+        actualParticle = Instantiate(particles[(int)actualSeason], transform);
+
         // TODO :
         // clear les gameobjects déjà spawned si besoin
         // re spawn de nouvelles plantes si le spawner est vide
         // changer les particules (+1 sur la list)
+    }
+    private void SpawnsRainSpawners(bool _rainStarts)
+    {
+        if (_rainStarts)
+        {
+            //spawn spawners
+            foreach(Transform spawnPoint in rainSpawnPoints)
+            {
+                GameObject newSpawner = Instantiate<GameObject>(rainSpawnerPrefab, spawnPoint);
+                newSpawner.transform.parent = spawnPoint;
+            }
+        }
     }
 }

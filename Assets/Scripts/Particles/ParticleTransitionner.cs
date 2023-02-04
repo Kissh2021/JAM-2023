@@ -15,14 +15,6 @@ public class ParticleTransitionner : MonoBehaviour
 		get => spawnRate;
 	}
 
-	private void Awake()
-	{
-		var emission = GetComponent<ParticleSystem>().emission;
-		rateOverTimeMinMax.x = emission.rateOverTime.constantMin;
-		rateOverTimeMinMax.y = emission.rateOverTime.constantMax;
-		
-	}
-
 	void Start()
 	{
 		UpdateSystem();
