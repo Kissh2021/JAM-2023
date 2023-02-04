@@ -9,13 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9082404161100650990}
-  - component: {fileID: 6435001283638414220}
-  - component: {fileID: 5162430308303548301}
+  - component: {fileID: 6021638655365438720}
+  - component: {fileID: 3262819003217038107}
   - component: {fileID: 9082404161100650991}
   - component: {fileID: 9082404161100650988}
-  - component: {fileID: 7604946636567519562}
+  - component: {fileID: 3856270245192090226}
   m_Layer: 0
-  m_Name: Snow
+  m_Name: FallingLeavesAutomn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,9 +34,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &6435001283638414220
+--- !u!114 &6021638655365438720
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48,9 +48,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc042f893a276e94caab18805765cfe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rateOverTimeMinMax: {x: 5, y: 20}
+  rateOverTimeMinMax: {x: 2, y: 20}
   spawnRate: 1
---- !u!114 &5162430308303548301
+--- !u!114 &3262819003217038107
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -318,8 +318,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.3
-      minScalar: 0.1
+      scalar: 0.5
+      minScalar: 0.2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -902,7 +902,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 20
-      minScalar: 5
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3143,7 +3143,7 @@ ParticleSystem:
     rotationAmount:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 180
+      scalar: 1080
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -3831,7 +3831,7 @@ ParticleSystem:
     colliderQueryMode: 0
     radiusScale: 1
     primitives:
-    - {fileID: 7604946636567519562}
+    - {fileID: 3856270245192090226}
   SubModule:
     serializedVersion: 2
     enabled: 0
@@ -4800,7 +4800,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 718e77e290a759f4092a8e44b02167ed, type: 2}
+  - {fileID: 2100000, guid: 1ecf4644d970a564fa0d95313c8abffd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4851,7 +4851,7 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!65 &7604946636567519562
+--- !u!65 &3856270245192090226
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -20,6 +20,10 @@ public enum eSpawnerPrefabs
 public class SeasonManager : MonoBehaviour
 {
     /// <summary>
+    /// List of particles depending on season (use the enum)
+    /// </summary>
+    [SerializeField] List<ParticleSystem> particles;
+    /// <summary>
     /// Where the elementspawners will spawn
     /// </summary>
     [SerializeField] List<Transform> spawnPoints;
@@ -49,5 +53,6 @@ public class SeasonManager : MonoBehaviour
         // TODO :
         // clear les gameobjects déjà spawned si besoin
         // re spawn de nouvelles plantes si le spawner est vide
+        // changer les particules (+1 sur la list)
     }
 }
