@@ -53,20 +53,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4408153214278774747, guid: aa61cd776e32ba346abd7a6a1b9546ec, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 81d54b91b09c540068cd8ddcc779e739, type: 3}
+    - target: {fileID: 4408153214278774747, guid: aa61cd776e32ba346abd7a6a1b9546ec, type: 3}
       propertyPath: m_Color.b
-      value: 0.1780883
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4408153214278774747, guid: aa61cd776e32ba346abd7a6a1b9546ec, type: 3}
       propertyPath: m_Color.g
-      value: 0.29194763
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4408153214278774747, guid: aa61cd776e32ba346abd7a6a1b9546ec, type: 3}
       propertyPath: m_Color.r
-      value: 0.4339623
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5249421454400350141, guid: aa61cd776e32ba346abd7a6a1b9546ec, type: 3}
       propertyPath: m_Name
-      value: EarthElement Variant
+      value: NutrientElement Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8719534039657321712, guid: aa61cd776e32ba346abd7a6a1b9546ec, type: 3}
       propertyPath: element

@@ -24,14 +24,35 @@ public class SeasonManager : MonoBehaviour
 {
     private static SeasonManager instance;
     public static SeasonManager seasonManager { get => instance; }
-    [SerializeField] BackgroundManager backgroundManager;
 
-    [Category("Particles")]
+    [Space(20), Header("Particles")]
     /// <summary>
     /// List of particles depending on season (use the enum)
     /// </summary>
     [SerializeField] List<GameObject> particles;
     public GameObject actualParticle;
+
+
+    [Space(20), Header("Nutrients")]
+    [SerializeField] List<GameObject> NutrientsSpawners;
+    public GameObject actualNutrientSpawner;
+    [SerializeField] Transform nutrientTransform;
+
+
+    [Space(20), Header("Rain")]
+    [SerializeField] GameObject rainSpawnerPrefab;
+    [SerializeField] List<Transform> rainSpawnPoints;
+    [SerializeField] bool isRaining;
+    bool isRainingLAST;
+    public Action<bool> OnRainChange;
+
+    [Space(20), Header("Others")]
+    /// <summary>
+    /// the elementspawners already spawned
+    /// </summary>
+    public List<GameObject> ActualSpawners;
+    [SerializeField] BackgroundManager backgroundManager;
+    [SerializeField] float seasonDuration;
 
     /// <summary>
     /// Where the elementspawners will spawn
@@ -45,25 +66,11 @@ public class SeasonManager : MonoBehaviour
     [SerializeField] List<GameObject> summerSpawners;
     [SerializeField] List<GameObject> autumnSpawners;
     [SerializeField] List<GameObject> winterSpawners;
-
-    [SerializeField] float seasonDuration;
-
-    [Category("Rain")]
-    [SerializeField] GameObject rainSpawnerPrefab;
-    [SerializeField] List<Transform> rainSpawnPoints;
-    [SerializeField] bool isRaining;
-    bool isRainingLAST;
-    public Action<bool> OnRainChange;
-    /// <summary>
-    /// the elementspawners already spawned
-    /// </summary>
-    public List<GameObject> ActualSpawners;
     static public eSeason actualSeason { get; set; }
     private bool IsRaining { get => isRaining; 
         set {
             if (isRaining != isRainingLAST)
             {
-                Debug.Log(value);
                 isRaining = value;
                 OnRainChange.Invoke(IsRaining);
             }
@@ -83,6 +90,9 @@ public class SeasonManager : MonoBehaviour
 
         // Particles
         actualParticle = Instantiate(particles[(int)actualSeason], transform);
+
+        // Nutrients
+        actualNutrientSpawner = Instantiate(NutrientsSpawners[(int)actualSeason], nutrientTransform);
 
         timerSeason = 0f;
 
@@ -117,6 +127,8 @@ public class SeasonManager : MonoBehaviour
         backgroundManager.ProcFade();
         Destroy(actualParticle.gameObject);
         actualParticle = Instantiate(particles[(int)actualSeason], transform);
+        Destroy(actualNutrientSpawner.gameObject);
+        actualNutrientSpawner = Instantiate(NutrientsSpawners[(int)actualSeason], nutrientTransform);
 
         // TODO :
         // clear les gameobjects déjà spawned si besoin

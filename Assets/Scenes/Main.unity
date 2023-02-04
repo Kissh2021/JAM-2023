@@ -188,7 +188,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: cead0cff9caf61540a9cd9e3074eef79, type: 3}
   - {fileID: 2800000, guid: c8d2ce3d9a93dd044908c7ae21e484ec, type: 3}
   - {fileID: 2800000, guid: cead0cff9caf61540a9cd9e3074eef79, type: 3}
-  - {fileID: 2800000, guid: c8d2ce3d9a93dd044908c7ae21e484ec, type: 3}
+  - {fileID: 2800000, guid: f3090012c9109074dbcc54b405b53d69, type: 3}
   fadeSpeed: 1
 --- !u!212 &69794409
 SpriteRenderer:
@@ -790,11 +790,19 @@ MonoBehaviour:
   - {fileID: 2569220943341336493, guid: 052921f059da4514ea07382aa9559dbe, type: 3}
   actualParticle: {fileID: 0}
   spawnPoints: []
-  springSpawners: []
+  springSpawners:
+  - {fileID: 5411698183442993293, guid: 09c0ada3212929c459f4a29806114495, type: 3}
   summerSpawners: []
   autumnSpawners: []
   winterSpawners: []
-  seasonDuration: 5
+  NutrientsSpawners:
+  - {fileID: 5411698183442993293, guid: 09c0ada3212929c459f4a29806114495, type: 3}
+  - {fileID: 5189372834777140997, guid: 9676b9bde4b16e84b8dceb53dbc71667, type: 3}
+  - {fileID: 2587967335480607695, guid: 6860b644be4359240ab5eda26668d494, type: 3}
+  - {fileID: 4754980967283852760, guid: c1fa911fcd7e05d4da94db276a7f3479, type: 3}
+  actualNutrientSpawner: {fileID: 0}
+  nutrientTransform: {fileID: 1668723587}
+  seasonDuration: 20
   rainSpawnerPrefab: {fileID: 5415080491795465749, guid: 8fb9c44293b9c674699c3f624fa7fa8e, type: 3}
   rainSpawnPoints:
   - {fileID: 1182386067}
@@ -1032,6 +1040,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attenuationObject: {fileID: 0}
+--- !u!1 &1668723586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1668723587}
+  m_Layer: 0
+  m_Name: NutrientSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1668723587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668723586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -5.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1906900779
 GameObject:
   m_ObjectHideFlags: 0

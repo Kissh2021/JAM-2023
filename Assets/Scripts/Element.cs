@@ -5,9 +5,9 @@ using UnityEngine.UIElements;
 
 public enum eElements
 {
-    FIRE,
+    LIGHT,
     WATER,
-    EARTH,
+    NUTRIENT,
     AIR,
     ARMOR,
     COUNT
