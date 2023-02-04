@@ -128,6 +128,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{c35f3708-2a06-43f6-9753-c3235a0d45e8}">
+		<property name="volume">
+			<value>-9.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{6dc1086a-713b-49b3-b1bc-85d04f31d3b5}</destination>
 		</relationship>
@@ -235,13 +238,16 @@
 		<property name="length">
 			<value>185.3695625</value>
 		</property>
+		<property name="name">
+			<value>ONLY BALLS</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{71a74809-ffc1-49c9-bcd8-ab46e7a2cc0d}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{214cf445-ea84-4bee-86ea-29c9a3c440ba}">
 		<property name="name">
-			<value>Bells</value>
+			<value>Balls</value>
 		</property>
 		<relationship name="automators">
 			<destination>{aa07d7f2-0d2c-433d-8f48-d1a1d50fcc94}</destination>
