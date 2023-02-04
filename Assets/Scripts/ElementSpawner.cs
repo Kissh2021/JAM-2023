@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,6 +29,7 @@ public class ElementSpawner : MonoBehaviour
         if (elements[elemToSpawn] != null)
         {
             Element newElem = Instantiate<Element>(elements[elemToSpawn], transform);
+            newElem.transform.parent = transform;
         }
     }
     private void Update()

@@ -9,12 +9,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 470465780237244108, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
+      propertyPath: DirectionY
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 470465780237244108, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
       propertyPath: timeToMove
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 470465780237244108, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
       propertyPath: Movementspeed
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3989306502529672577, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
       propertyPath: m_Name
@@ -38,11 +42,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7060554593583624538, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.004436549
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7060554593583624538, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9678688
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7060554593583624538, guid: bca748576b5a4d44a9c16ed676509b85, type: 3}
       propertyPath: m_LocalPosition.z
