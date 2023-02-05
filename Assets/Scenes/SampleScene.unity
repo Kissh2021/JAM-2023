@@ -607,7 +607,7 @@ Transform:
   m_GameObject: {fileID: 777882069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 0.625, y: 0.625, z: 0.625}
+  m_LocalScale: {x: 1.15, y: 1.15, z: 1.15}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -781,29 +781,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1304789226 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5468069755258934214, guid: 906429a9f4627394aa8d8e32fade45a1, type: 3}
-  m_PrefabInstance: {fileID: 1494326990}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1304789227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304789226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39cc18ddf867eba48a8d3c404bd05187, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  confinedIn:
-    serializedVersion: 2
-    x: -8.888889
-    y: -5
-    width: 17.777779
-    height: 10
 --- !u!1001 &1494326990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -815,10 +792,6 @@ PrefabInstance:
     - target: {fileID: 5468069755258934214, guid: 906429a9f4627394aa8d8e32fade45a1, type: 3}
       propertyPath: m_Name
       value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468069755258934214, guid: 906429a9f4627394aa8d8e32fade45a1, type: 3}
-      propertyPath: m_TagString
-      value: MainCamera
       objectReference: {fileID: 0}
     - target: {fileID: 5468069755258934219, guid: 906429a9f4627394aa8d8e32fade45a1, type: 3}
       propertyPath: m_RootOrder
@@ -867,10 +840,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5468069755258934214, guid: 906429a9f4627394aa8d8e32fade45a1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1304789227}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 906429a9f4627394aa8d8e32fade45a1, type: 3}
 --- !u!1 &1912918316
 GameObject:
