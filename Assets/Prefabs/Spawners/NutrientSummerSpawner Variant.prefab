@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5472977707014246680, guid: 4567774f2704e604c8f04a1cb9fe7bf7, type: 3}
       propertyPath: SpawnRate
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5472977707014246680, guid: 4567774f2704e604c8f04a1cb9fe7bf7, type: 3}
       propertyPath: elements.Array.size

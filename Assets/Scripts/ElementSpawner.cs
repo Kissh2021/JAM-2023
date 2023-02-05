@@ -24,12 +24,15 @@ public class ElementSpawner : MonoBehaviour
     /// </summary>
     public void Spawn()
     {
-        int elemToSpawn = Random.Range(0, elements.Count);
-
-        if (elements[elemToSpawn] != null)
+        if (elements.Count != 0)
         {
-            Element newElem = Instantiate<Element>(elements[elemToSpawn], transform);
-            newElem.transform.parent = transform;
+            int elemToSpawn = Random.Range(0, elements.Count);
+
+            if (elements[elemToSpawn] != null)
+            {
+                Element newElem = Instantiate<Element>(elements[elemToSpawn], transform);
+                newElem.transform.parent = transform;
+            }
         }
     }
     private void Update()

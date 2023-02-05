@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3881764738943822874
+--- !u!1001 &5888720302654388053
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4033973711103478298, guid: 4567774f2704e604c8f04a1cb9fe7bf7, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4033973711103478298, guid: 4567774f2704e604c8f04a1cb9fe7bf7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53,28 +53,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5265588058199825961, guid: 4567774f2704e604c8f04a1cb9fe7bf7, type: 3}
-      propertyPath: m_Sprite
-      value: 
+      propertyPath: m_Size.x
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 5265588058199825961, guid: 4567774f2704e604c8f04a1cb9fe7bf7, type: 3}
+      propertyPath: m_Size.y
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5265588058199825961, guid: 4567774f2704e604c8f04a1cb9fe7bf7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9813cbf54978641f7aa28e0faa7ce406, type: 3}
+    - target: {fileID: 5265588058199825961, guid: 4567774f2704e604c8f04a1cb9fe7bf7, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5472977707014246680, guid: 4567774f2704e604c8f04a1cb9fe7bf7, type: 3}
-      propertyPath: SpawnRate
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5472977707014246680, guid: 4567774f2704e604c8f04a1cb9fe7bf7, type: 3}
-      propertyPath: elements.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5472977707014246680, guid: 4567774f2704e604c8f04a1cb9fe7bf7, type: 3}
-      propertyPath: elements.Array.data[0]
-      value: 
-      objectReference: {fileID: 4510600565129597773, guid: f5142d4232201104d97305ded6337359, type: 3}
     - target: {fileID: 8368771717212973506, guid: 4567774f2704e604c8f04a1cb9fe7bf7, type: 3}
       propertyPath: m_Name
-      value: NutrientWinterSpawner Variant
+      value: Flower Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
