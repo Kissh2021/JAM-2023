@@ -9,7 +9,10 @@ public class NatureTransformer : MonoBehaviour
     [SerializeField] Color winterColor;
     [SerializeField] Color summerColor;
 
+    [SerializeField] Sprite winter;
+
     SpriteRenderer spriteRenderer;
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -30,6 +33,7 @@ public class NatureTransformer : MonoBehaviour
                 break;
             case eSeason.WINTER:
                 spriteRenderer.color = winterColor;
+                spriteRenderer.sprite = winter;
                 break;
         }
     }

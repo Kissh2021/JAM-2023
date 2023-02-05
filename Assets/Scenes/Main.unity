@@ -224,6 +224,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &7396570
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +326,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &20214182
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +490,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &45263049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,6 +1180,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &221307857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,6 +1493,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.2968215, b: 0, a: 1}
   winterColor: {r: 0, g: 0, b: 0, a: 0}
   summerColor: {r: 1, g: 0.9021292, b: 0.5801887, a: 1}
+  winter: {fileID: 21300000, guid: 0252c0cc65e544ace9a353ef751a0b76, type: 3}
 --- !u!1 &316991989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,6 +1595,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &386223269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,6 +1697,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.2968215, b: 0, a: 1}
   winterColor: {r: 0, g: 0, b: 0, a: 0}
   summerColor: {r: 1, g: 0.9021292, b: 0.5801887, a: 1}
+  winter: {fileID: 21300000, guid: 0252c0cc65e544ace9a353ef751a0b76, type: 3}
 --- !u!1 &401585754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,7 +1892,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504401055}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.040544, y: 0.087, z: 0}
+  m_LocalPosition: {x: 4.040544, y: -0.015, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1960,6 +1967,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &549225840
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,6 +2069,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.2968215, b: 0, a: 1}
   winterColor: {r: 0, g: 0, b: 0, a: 0}
   summerColor: {r: 1, g: 0.9021292, b: 0.5801887, a: 1}
+  winter: {fileID: 21300000, guid: 0252c0cc65e544ace9a353ef751a0b76, type: 3}
 --- !u!1 &553531452
 GameObject:
   m_ObjectHideFlags: 0
@@ -2566,6 +2575,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.2968215, b: 0, a: 1}
   winterColor: {r: 0, g: 0, b: 0, a: 0}
   summerColor: {r: 1, g: 0.9021292, b: 0.5801887, a: 1}
+  winter: {fileID: 21300000, guid: 0252c0cc65e544ace9a353ef751a0b76, type: 3}
 --- !u!1 &691120230
 GameObject:
   m_ObjectHideFlags: 0
@@ -3139,6 +3149,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &827452742
 GameObject:
   m_ObjectHideFlags: 0
@@ -3372,6 +3383,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.2968215, b: 0, a: 1}
   winterColor: {r: 0, g: 0, b: 0, a: 0}
   summerColor: {r: 1, g: 0.9021292, b: 0.5801887, a: 1}
+  winter: {fileID: 21300000, guid: 0252c0cc65e544ace9a353ef751a0b76, type: 3}
 --- !u!1 &874741840
 GameObject:
   m_ObjectHideFlags: 0
@@ -3473,6 +3485,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &883825447
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,6 +3733,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &950048208
 GameObject:
   m_ObjectHideFlags: 0
@@ -4078,6 +4092,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1033023457
 GameObject:
   m_ObjectHideFlags: 0
@@ -4179,6 +4194,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1040861192
 GameObject:
   m_ObjectHideFlags: 0
@@ -4311,6 +4327,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1057629915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4496,6 +4513,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1063068259
 GameObject:
   m_ObjectHideFlags: 0
@@ -4765,6 +4783,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1096137496
 GameObject:
   m_ObjectHideFlags: 0
@@ -4950,6 +4969,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1113028103
 GameObject:
   m_ObjectHideFlags: 0
@@ -5303,6 +5323,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1160052204
 GameObject:
   m_ObjectHideFlags: 0
@@ -5839,6 +5860,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1313371387
 GameObject:
   m_ObjectHideFlags: 0
@@ -6024,6 +6046,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1333291770
 GameObject:
   m_ObjectHideFlags: 0
@@ -6125,6 +6148,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.2968215, b: 0, a: 1}
   winterColor: {r: 0, g: 0, b: 0, a: 0}
   summerColor: {r: 1, g: 0.9021292, b: 0.5801887, a: 1}
+  winter: {fileID: 21300000, guid: 0252c0cc65e544ace9a353ef751a0b76, type: 3}
 --- !u!1 &1341094575
 GameObject:
   m_ObjectHideFlags: 0
@@ -6226,6 +6250,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1431390073
 GameObject:
   m_ObjectHideFlags: 0
@@ -6980,6 +7005,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1602266344
 GameObject:
   m_ObjectHideFlags: 0
@@ -7081,6 +7107,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1619431870
 GameObject:
   m_ObjectHideFlags: 0
@@ -7363,6 +7390,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1730820372
 GameObject:
   m_ObjectHideFlags: 0
@@ -7464,6 +7492,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1740588010
 GameObject:
   m_ObjectHideFlags: 0
@@ -7985,6 +8014,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1848016838
 GameObject:
   m_ObjectHideFlags: 0
@@ -8170,6 +8200,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1867716796
 GameObject:
   m_ObjectHideFlags: 0
@@ -8355,6 +8386,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1881967670
 GameObject:
   m_ObjectHideFlags: 0
@@ -8624,6 +8656,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1906900779
 GameObject:
   m_ObjectHideFlags: 0
@@ -8840,6 +8873,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.75778925, b: 0.2688679, a: 1}
   winterColor: {r: 1, g: 1, b: 1, a: 0}
   summerColor: {r: 0.8584906, g: 0.7730083, b: 0.40899786, a: 1}
+  winter: {fileID: 0}
 --- !u!1 &1941988548
 GameObject:
   m_ObjectHideFlags: 0
@@ -8941,6 +8975,7 @@ MonoBehaviour:
   autumnColor: {r: 1, g: 0.2968215, b: 0, a: 1}
   winterColor: {r: 0, g: 0, b: 0, a: 0}
   summerColor: {r: 1, g: 0.9021292, b: 0.5801887, a: 1}
+  winter: {fileID: 21300000, guid: 0252c0cc65e544ace9a353ef751a0b76, type: 3}
 --- !u!1 &1961755509
 GameObject:
   m_ObjectHideFlags: 0
