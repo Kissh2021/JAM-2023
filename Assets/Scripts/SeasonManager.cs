@@ -25,6 +25,7 @@ public class SeasonManager : MonoBehaviour
 {
     private static SeasonManager instance;
     public static SeasonManager seasonManager { get => instance; }
+    public event Action<eSeason> OnSeasonChange;
 
     [Space(20), Header("Particles")]
     /// <summary>
@@ -67,6 +68,7 @@ public class SeasonManager : MonoBehaviour
     [SerializeField] List<GameObject> summerSpawners;
     [SerializeField] List<GameObject> autumnSpawners;
     [SerializeField] List<GameObject> winterSpawners;
+
     static public eSeason actualSeason { get; set; }
     private bool IsRaining
     {
@@ -130,7 +132,6 @@ public class SeasonManager : MonoBehaviour
                     SeasonChange(springSpawners);
                     break;
             }
-
             timerSeason = 0f;
         }
         IsRaining = isRaining;
@@ -146,10 +147,14 @@ public class SeasonManager : MonoBehaviour
     {
         // Update actualSeason
         actualSeason = actualSeason + 1;
+
         if (actualSeason == eSeason.COUNT)
         {
             actualSeason = eSeason.SPRING;
         }
+
+        OnSeasonChange?.Invoke(actualSeason);
+
         Debug.Log(actualSeason.ToString());
         backgroundManager.ProcFade();
 
