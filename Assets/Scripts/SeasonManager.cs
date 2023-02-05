@@ -57,15 +57,15 @@ public class SeasonManager : MonoBehaviour
     /// <summary>
     /// Where the elementspawners will spawn
     /// </summary>
-    [SerializeField] List<Transform> spawnPoints;
+   // [SerializeField] List<Transform> spawnPoints;
 
     /// <summary>
     /// the elementspawners prefabs
     /// </summary>
-    [SerializeField] List<GameObject> springSpawners;
-    [SerializeField] List<GameObject> summerSpawners;
-    [SerializeField] List<GameObject> autumnSpawners;
-    [SerializeField] List<GameObject> winterSpawners;
+    //[SerializeField] List<GameObject> springSpawners;
+   // [SerializeField] List<GameObject> summerSpawners;
+   // [SerializeField] List<GameObject> autumnSpawners;
+    //[SerializeField] List<GameObject> winterSpawners;
     static public eSeason actualSeason { get; set; }
     private bool IsRaining { get => isRaining; 
         set {
@@ -85,11 +85,19 @@ public class SeasonManager : MonoBehaviour
     }
     private void Start()
     {
-        spawnPoints = new List<Transform>();
+        //spawnPoints = new List<Transform>();
         actualSeason = eSeason.SPRING;
 
         // Particles
-        actualParticle = Instantiate(particles[(int)actualSeason], transform);
+        // Set all the particles to 0
+        foreach (GameObject particle in particles)
+        {
+            particle.GetComponent<SeasonTransitionner>().SpawnRate = 0;
+        }
+
+        // set the actual particle to 1
+        actualParticle = particles[(int)actualSeason];
+        actualParticle.GetComponent<SeasonTransitionner>().SpawnRate = 1;
 
         // Nutrients
         actualNutrientSpawner = Instantiate(NutrientsSpawners[(int)actualSeason], nutrientTransform);
@@ -125,8 +133,13 @@ public class SeasonManager : MonoBehaviour
         }
         Debug.Log(actualSeason.ToString());
         backgroundManager.ProcFade();
-        Destroy(actualParticle.gameObject);
-        actualParticle = Instantiate(particles[(int)actualSeason], transform);
+
+        // Particles 
+        actualParticle.GetComponent<SeasonTransitionner>().SpawnRate = 0;
+        actualParticle = particles[(int)actualSeason];
+        actualParticle.GetComponent<SeasonTransitionner>().SpawnRate = 1;
+
+        // Nutrients
         Destroy(actualNutrientSpawner.gameObject);
         actualNutrientSpawner = Instantiate(NutrientsSpawners[(int)actualSeason], nutrientTransform);
 
