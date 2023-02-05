@@ -35,7 +35,7 @@ Transform:
   - {fileID: 8157360595347964096}
   - {fileID: 53529263972642334}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8980713112799703636
 MonoBehaviour:
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 650fcc7a448e67e4b9f4d5e8c52ff398, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 1
+  spawnRate: 0
 --- !u!1001 &1098854442726529326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58,6 +58,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 258457262496754194}
     m_Modifications:
+    - target: {fileID: 3856270245192090226, guid: 3bf932790e2fa114da143168610f45be, type: 3}
+      propertyPath: m_Size.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: 3bf932790e2fa114da143168610f45be, type: 3}
+      propertyPath: m_Center.y
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: 3bf932790e2fa114da143168610f45be, type: 3}
+      propertyPath: m_Center.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6021638655365438720, guid: 3bf932790e2fa114da143168610f45be, type: 3}
+      propertyPath: spawnRate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650989, guid: 3bf932790e2fa114da143168610f45be, type: 3}
       propertyPath: m_Name
       value: FallingPetalSpringDarkPink
@@ -106,6 +122,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9082404161100650991, guid: 3bf932790e2fa114da143168610f45be, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082404161100650991, guid: 3bf932790e2fa114da143168610f45be, type: 3}
+      propertyPath: EmissionModule.rateOverTime.minScalar
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -124,6 +148,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 258457262496754194}
     m_Modifications:
+    - target: {fileID: 3856270245192090226, guid: e6e57b9494caa724daf93f386987c673, type: 3}
+      propertyPath: m_Size.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: e6e57b9494caa724daf93f386987c673, type: 3}
+      propertyPath: m_Center.y
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: e6e57b9494caa724daf93f386987c673, type: 3}
+      propertyPath: m_Center.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6021638655365438720, guid: e6e57b9494caa724daf93f386987c673, type: 3}
+      propertyPath: spawnRate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650989, guid: e6e57b9494caa724daf93f386987c673, type: 3}
       propertyPath: m_Name
       value: FallingPetalSpringPink
@@ -172,6 +212,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9082404161100650991, guid: e6e57b9494caa724daf93f386987c673, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082404161100650991, guid: e6e57b9494caa724daf93f386987c673, type: 3}
+      propertyPath: EmissionModule.rateOverTime.minScalar
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201,6 +249,22 @@ PrefabInstance:
     - target: {fileID: 3262819003217038107, guid: eab6463877bb80442b554b6b4906849b, type: 3}
       propertyPath: windForceChangeScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: eab6463877bb80442b554b6b4906849b, type: 3}
+      propertyPath: m_Size.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: eab6463877bb80442b554b6b4906849b, type: 3}
+      propertyPath: m_Center.y
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: eab6463877bb80442b554b6b4906849b, type: 3}
+      propertyPath: m_Center.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6021638655365438720, guid: eab6463877bb80442b554b6b4906849b, type: 3}
+      propertyPath: spawnRate
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6021638655365438720, guid: eab6463877bb80442b554b6b4906849b, type: 3}
       propertyPath: rateOverTimeMinMax.x
@@ -260,27 +324,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650991, guid: eab6463877bb80442b554b6b4906849b, type: 3}
       propertyPath: VelocityModule.x.scalar
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650991, guid: eab6463877bb80442b554b6b4906849b, type: 3}
       propertyPath: VelocityModule.z.scalar
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650991, guid: eab6463877bb80442b554b6b4906849b, type: 3}
       propertyPath: VelocityModule.x.minScalar
-      value: -7
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650991, guid: eab6463877bb80442b554b6b4906849b, type: 3}
       propertyPath: VelocityModule.z.minScalar
-      value: 0
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082404161100650991, guid: eab6463877bb80442b554b6b4906849b, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082404161100650991, guid: eab6463877bb80442b554b6b4906849b, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650991, guid: eab6463877bb80442b554b6b4906849b, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650991, guid: eab6463877bb80442b554b6b4906849b, type: 3}
       propertyPath: EmissionModule.rateOverTime.minScalar
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -311,6 +383,22 @@ PrefabInstance:
     - target: {fileID: 3262819003217038107, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
       propertyPath: windForceChangeScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
+      propertyPath: m_Size.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
+      propertyPath: m_Center.y
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
+      propertyPath: m_Center.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6021638655365438720, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
+      propertyPath: spawnRate
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6021638655365438720, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
       propertyPath: rateOverTimeMinMax.x
@@ -370,27 +458,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650991, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
       propertyPath: VelocityModule.x.scalar
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650991, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
       propertyPath: VelocityModule.z.scalar
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650991, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
       propertyPath: VelocityModule.x.minScalar
-      value: -7
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650991, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
       propertyPath: VelocityModule.z.minScalar
-      value: 0
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082404161100650991, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082404161100650991, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650991, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650991, guid: 7dde244b957d5434da56ceb3be8b7a72, type: 3}
       propertyPath: EmissionModule.rateOverTime.minScalar
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -410,6 +506,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 258457262496754194}
     m_Modifications:
+    - target: {fileID: 3856270245192090226, guid: 0fb6d65af14a73741ba8a892bf02b855, type: 3}
+      propertyPath: m_Size.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: 0fb6d65af14a73741ba8a892bf02b855, type: 3}
+      propertyPath: m_Center.y
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: 0fb6d65af14a73741ba8a892bf02b855, type: 3}
+      propertyPath: m_Center.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6021638655365438720, guid: 0fb6d65af14a73741ba8a892bf02b855, type: 3}
+      propertyPath: spawnRate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650989, guid: 0fb6d65af14a73741ba8a892bf02b855, type: 3}
       propertyPath: m_Name
       value: FallingPetalSpringDarkDarkPink
@@ -456,6 +568,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650990, guid: 0fb6d65af14a73741ba8a892bf02b855, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082404161100650991, guid: 0fb6d65af14a73741ba8a892bf02b855, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082404161100650991, guid: 0fb6d65af14a73741ba8a892bf02b855, type: 3}
+      propertyPath: EmissionModule.rateOverTime.minScalar
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

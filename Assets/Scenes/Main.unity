@@ -962,6 +962,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7543949297940547811, guid: 052921f059da4514ea07382aa9559dbe, type: 3}
+      propertyPath: m_Size.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7543949297940547811, guid: 052921f059da4514ea07382aa9559dbe, type: 3}
+      propertyPath: m_Center.y
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7543949297940547811, guid: 052921f059da4514ea07382aa9559dbe, type: 3}
+      propertyPath: m_Center.z
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9164932101085753414, guid: 052921f059da4514ea07382aa9559dbe, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 0
@@ -3979,6 +3991,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1192526731698095617, guid: f0940c11aa9585c4985d3bea4bddf1e7, type: 3}
+      propertyPath: m_Size.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192526731698095617, guid: f0940c11aa9585c4985d3bea4bddf1e7, type: 3}
+      propertyPath: m_Center.y
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192526731698095617, guid: f0940c11aa9585c4985d3bea4bddf1e7, type: 3}
+      propertyPath: m_Center.z
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1256256286968337191, guid: f0940c11aa9585c4985d3bea4bddf1e7, type: 3}
       propertyPath: spawnRate
       value: 0
@@ -3988,12 +4012,24 @@ PrefabInstance:
       value: AutomnParticles
       objectReference: {fileID: 0}
     - target: {fileID: 6558265334380338588, guid: f0940c11aa9585c4985d3bea4bddf1e7, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558265334380338588, guid: f0940c11aa9585c4985d3bea4bddf1e7, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558265334380338588, guid: f0940c11aa9585c4985d3bea4bddf1e7, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6558265334380338588, guid: f0940c11aa9585c4985d3bea4bddf1e7, type: 3}
       propertyPath: EmissionModule.rateOverTime.minScalar
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6558265334380338589, guid: f0940c11aa9585c4985d3bea4bddf1e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8852944461435656737, guid: f0940c11aa9585c4985d3bea4bddf1e7, type: 3}
       propertyPath: m_RootOrder
@@ -4506,14 +4542,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 53529263972642335, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53529263972642335, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: EmissionModule.rateOverTime.minScalar
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 258457262496754194, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -4558,77 +4586,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1709915206247341722, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: VelocityModule.x.scalar
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1709915206247341722, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: VelocityModule.z.scalar
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1709915206247341722, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: VelocityModule.x.minScalar
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1709915206247341722, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: VelocityModule.z.minScalar
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1709915206247341722, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1709915206247341722, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: EmissionModule.rateOverTime.minScalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6432389116451676089, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: VelocityModule.x.scalar
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6432389116451676089, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: VelocityModule.z.scalar
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6432389116451676089, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: VelocityModule.x.minScalar
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6432389116451676089, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: VelocityModule.z.minScalar
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6432389116451676089, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6432389116451676089, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: EmissionModule.rateOverTime.minScalar
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7059797234125548301, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
       propertyPath: m_Name
       value: SpringParticles
-      objectReference: {fileID: 0}
-    - target: {fileID: 7192091058478568665, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7192091058478568665, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: EmissionModule.rateOverTime.minScalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157360595347964097, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157360595347964097, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: EmissionModule.rateOverTime.minScalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8980713112799703636, guid: b24d9d35982d3174396f184fdda48c49, type: 3}
-      propertyPath: spawnRate
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -32,7 +32,7 @@ Transform:
   - {fileID: 7436411494323926434}
   - {fileID: 377708983115426662}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &377708983896693866
 MonoBehaviour:
@@ -55,6 +55,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 377708983896693867}
     m_Modifications:
+    - target: {fileID: 3856270245192090226, guid: 8a05e12534d91134183b579ba94b612d, type: 3}
+      propertyPath: m_Size.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: 8a05e12534d91134183b579ba94b612d, type: 3}
+      propertyPath: m_Center.y
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856270245192090226, guid: 8a05e12534d91134183b579ba94b612d, type: 3}
+      propertyPath: m_Center.z
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9082404161100650989, guid: 8a05e12534d91134183b579ba94b612d, type: 3}
       propertyPath: m_Name
       value: FallingLeavesSummer
@@ -103,6 +115,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9082404161100650991, guid: 8a05e12534d91134183b579ba94b612d, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082404161100650991, guid: 8a05e12534d91134183b579ba94b612d, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -139,7 +159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5388668385715200090, guid: cffad96f3413b6540aee8756b5f63fe2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5388668385715200090, guid: cffad96f3413b6540aee8756b5f63fe2, type: 3}
       propertyPath: m_LocalPosition.z
