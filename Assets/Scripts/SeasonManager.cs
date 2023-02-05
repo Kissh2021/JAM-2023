@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public enum eSeason
 {
@@ -57,25 +58,29 @@ public class SeasonManager : MonoBehaviour
     /// <summary>
     /// Where the elementspawners will spawn
     /// </summary>
-   // [SerializeField] List<Transform> spawnPoints;
+    [SerializeField] List<Transform> spawnPoints = new List<Transform>();
 
     /// <summary>
     /// the elementspawners prefabs
     /// </summary>
-    //[SerializeField] List<GameObject> springSpawners;
-   // [SerializeField] List<GameObject> summerSpawners;
-   // [SerializeField] List<GameObject> autumnSpawners;
-    //[SerializeField] List<GameObject> winterSpawners;
+    [SerializeField] List<GameObject> springSpawners;
+    [SerializeField] List<GameObject> summerSpawners;
+    [SerializeField] List<GameObject> autumnSpawners;
+    [SerializeField] List<GameObject> winterSpawners;
     static public eSeason actualSeason { get; set; }
-    private bool IsRaining { get => isRaining; 
-        set {
+    private bool IsRaining
+    {
+        get => isRaining;
+        set
+        {
             if (isRaining != isRainingLAST)
             {
                 isRaining = value;
                 OnRainChange.Invoke(IsRaining);
             }
             isRainingLAST = isRaining;
-        } }
+        }
+    }
 
     float timerSeason;
 
@@ -85,7 +90,6 @@ public class SeasonManager : MonoBehaviour
     }
     private void Start()
     {
-        //spawnPoints = new List<Transform>();
         actualSeason = eSeason.SPRING;
 
         // Particles
@@ -111,7 +115,22 @@ public class SeasonManager : MonoBehaviour
         timerSeason += Time.deltaTime;
         if (timerSeason >= seasonDuration)
         {
-            SeasonChange();
+            switch (actualSeason)
+            {
+                case eSeason.SPRING:
+                    SeasonChange(summerSpawners);
+                    break;
+                case eSeason.SUMMER:
+                    SeasonChange(autumnSpawners);
+                    break;
+                case eSeason.AUTUMN:
+                    SeasonChange(winterSpawners);
+                    break;
+                case eSeason.WINTER:
+                    SeasonChange(springSpawners);
+                    break;
+            }
+
             timerSeason = 0f;
         }
         IsRaining = isRaining;
@@ -123,7 +142,7 @@ public class SeasonManager : MonoBehaviour
     /// <summary>
     /// Do things when season change
     /// </summary>
-    private void SeasonChange()
+    private void SeasonChange(List<GameObject> _spawners)
     {
         // Update actualSeason
         actualSeason = actualSeason + 1;
@@ -144,16 +163,32 @@ public class SeasonManager : MonoBehaviour
         actualNutrientSpawner = Instantiate(NutrientsSpawners[(int)actualSeason], nutrientTransform);
 
         // TODO :
-        // clear les gameobjects déjà spawned si besoin
-        // re spawn de nouvelles plantes si le spawner est vide
-        // changer les particules (+1 sur la list)
+        // clear les gameobjects déjà spawned
+        foreach (GameObject spawner in ActualSpawners)
+        {
+            Destroy(spawner);
+        }
+        ActualSpawners.Clear();
+        // re spawn de nouvelles plantes 
+        foreach (Transform spawnPoint in spawnPoints)
+        {
+            if (_spawners.Count != 0)
+            {
+                GameObject prefab = _spawners[UnityEngine.Random.Range(0, _spawners.Count)];
+                if (prefab != null)
+                {
+                    GameObject newSpawner = Instantiate(prefab, spawnPoint);
+                    AddSpawnerToList(newSpawner);
+                }
+            }
+        }
     }
     private void SpawnsRainSpawners(bool _rainStarts)
     {
         if (_rainStarts)
         {
             //spawn spawners
-            foreach(Transform spawnPoint in rainSpawnPoints)
+            foreach (Transform spawnPoint in rainSpawnPoints)
             {
                 GameObject newSpawner = Instantiate<GameObject>(rainSpawnerPrefab, spawnPoint);
                 newSpawner.transform.parent = spawnPoint;

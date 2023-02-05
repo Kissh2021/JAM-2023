@@ -8,7 +8,7 @@ public class ElementSpawner : MonoBehaviour
     [SerializeField] float SpawnRate;
     public List<Element> elements;
     float timer = 0;
-
+    [SerializeField] bool Enabled = true;
 
     /// <summary>
     /// Add an element to the list so it can spawns
@@ -34,11 +34,14 @@ public class ElementSpawner : MonoBehaviour
     }
     private void Update()
     {
-        timer += Time.deltaTime;
-        if (timer >= SpawnRate)
+        if (Enabled)
         {
-            Spawn();
-            timer = 0;
+            timer += Time.deltaTime;
+            if (timer >= SpawnRate)
+            {
+                Spawn();
+                timer = 0;
+            }
         }
     }
 }
